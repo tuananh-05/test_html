@@ -1,0 +1,51 @@
+<!DOCTYPE <html>
+    <head>
+        <style>
+        body{
+            display: flex;
+        }
+
+        .heart {
+            position: absolute;
+            height: 120px;
+            width: 120px;
+            background-color: rgb(255, 0, 0);
+            top: 45%;
+            left: 45%;
+            box-shadow: 0 0 50px #fd0e42;
+            animation: dap alternate 1s infinite;
+        }
+        .heart::before, .heart::after{
+            position: absolute; 
+            width: 120px;
+            height: 120px;
+            content: '';  
+            border-radius: 50%; 
+            background-color: rgba(255, 0, 0);
+            bottom: 0px;
+            left: -58px;
+            right: 1px;
+            box-shadow: 0 0 50px #fd0e42;
+        }
+        .heart::after{
+            top: -58px;
+            left: 0px;
+        }
+
+        @keyframes dap {
+        0% {
+            transform: scale(1) rotateZ(45deg);           
+        }
+        100% {
+            transform: scale(1.2)rotateZ(45deg);            
+        }
+        }
+
+        </style>
+    </head>
+    <body style = "background-color: #110037">
+        <div class = heart>
+            
+        </div>
+    </body>
+</html>>
